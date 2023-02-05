@@ -4,6 +4,8 @@ Scyther client
 
 # Run
 
+`yarn && yarn start`
+
 # Docker
 
 There is a simple dev docker image which runs
