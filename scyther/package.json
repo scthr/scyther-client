@@ -10,6 +10,7 @@
   "author": "scyther",
   "license": "MIT",
   "dependencies": {
+    "@react-three/drei": "^9.56.17",
     "@react-three/fiber": "^8.10.4",
     "@types/three": "^0.149.0",
     "parcel": "2.8.0",
@@ -19,6 +20,7 @@
     "three": "^0.149.0"
   },
   "devDependencies": {
+    "buffer": "^5.5.0",
     "process": "^0.11.10"
   }
 }

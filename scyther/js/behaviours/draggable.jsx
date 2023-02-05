@@ -3,7 +3,7 @@ import React from "react";
 import { useThree } from '@react-three/fiber'
 import { useGesture } from "react-use-gesture"
 
-function useDragging(Box) {
+function draggable(Box) {
     const DraggableBox = (props) => {
         const ref = React.useRef()
         const [active, setActive] = React.useState(false)
@@ -37,4 +37,4 @@ function useDragging(Box) {
     return DraggableBox;
 }
 
-export default useDragging;
+export default draggable;

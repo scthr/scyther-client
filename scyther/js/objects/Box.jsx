@@ -1,12 +1,10 @@
 import React from "react";
-import useDragging from "../behaviours/useDragging";
+import draggable from "../behaviours/draggable";
 import { useFrame } from '@react-three/fiber'
 
 function Box(props) {
     const ref = React.useRef()
     const [hovered, hover] = React.useState(false)
-
-    useFrame((state, delta) => (ref.current.rotation.x += delta))
 
     return (
         <mesh
@@ -20,4 +18,4 @@ function Box(props) {
     )
 }
 
-export default useDragging(Box);
+export default draggable(Box);

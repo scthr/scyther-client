@@ -1,12 +1,10 @@
 import React from "react";
-import useDragging from "../behaviours/useDragging";
+import draggable from "../behaviours/draggable";
 import { useFrame } from '@react-three/fiber'
 
 function Sphere(props) {
     const ref = React.useRef()
     const [hovered, hover] = React.useState(false)
-
-    useFrame((state, delta) => (ref.current.rotation.x += delta))
 
     return (
         <mesh
@@ -14,10 +12,10 @@ function Sphere(props) {
             ref={ref}
             onPointerOver={(event) => hover(true)}
             onPointerOut={(event) => hover(false)}>
-            <sphereGeometry args={[1, 1, 1]} />
+            <sphereGeometry args={[1, 32, 16]} />
             <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
         </mesh>
     )
 }
 
-export default useDragging(Sphere);
+export default draggable(Sphere);
