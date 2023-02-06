@@ -2,7 +2,7 @@ import React from "react";
 import { Canvas } from '@react-three/fiber'
 import Box from "./objects/Box";
 import Sphere from "./objects/Sphere";
-import Hex from "./objects/Hex";
+import HexMap from "./objects/HexMap";
 
 const ScytherApp = () => {
 
@@ -12,7 +12,7 @@ const ScytherApp = () => {
             <pointLight position={[10, 10, 10]} />
             <Box position={[-1.2, 0, 0]} />
             <Sphere position={[1.2, 0, 0]} />
-            <Hex position={[0, 0, -1]} />
+            <HexMap position={[-2, -2, -1]} />
         </Canvas>
     )
 }

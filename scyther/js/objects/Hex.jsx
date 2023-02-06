@@ -29,15 +29,7 @@ const Hex = (props) => {
         <Extrude args={[shape, extrudeSettings]} {...props}>
           <meshPhysicalMaterial
             flatShading
-            color="#3E64FF"
-            thickness={SIDE}
-            roughness={0.4}
-            clearcoat={1}
-            clearcoatRoughness={1}
-            transmission={0.8}
-            ior={1.25}
-            attenuationTint="#fff"
-            attenuationDistance={0}
+            color={props.color}
           />
         </Extrude>
       </>
